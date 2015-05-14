@@ -88,7 +88,7 @@ public class Breakout extends GraphicsProgram {
 		for(int i = 0; i < NBRICK_ROWS; i++)
 		{
 			/* Determines the y position for each brick */
-			yPos = i * BRICK_HEIGHT;
+			yPos = i * BRICK_HEIGHT + BRICK_Y_OFFSET;
 			
 			for(int j = 0; j < NBRICKS_PER_ROW; j++)
 			{
