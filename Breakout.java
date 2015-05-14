@@ -79,6 +79,7 @@ public class Breakout extends GraphicsProgram {
 		int initXPos = (getWidth() - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
 		int yPos;
 		int xPos;
+		Color color;
 		
 		for(int i = 0; i < NBRICK_ROWS; i++)
 		{
@@ -100,24 +101,25 @@ public class Breakout extends GraphicsProgram {
 				int temp = i / 2;
 				if(temp == 0)
 				{
-					rect.setFillColor(Color.RED);
+					color = Color.RED;
 				}
 				else if(temp == 1)
 				{
-					rect.setFillColor(Color.ORANGE);
+					color = Color.ORANGE;
 				}
 				else if(temp == 2)
 				{
-					rect.setFillColor(Color.YELLOW);
+					color = Color.YELLOW;
 				}
 				else if(temp == 3)
 				{
-					rect.setFillColor(Color.GREEN);
+					color = Color.GREEN;
 				}
 				else if(temp == 4)
 				{
-					rect.setFillColor(Color.CYAN);
+					color = Color.CYAN;
 				}
+				ret.setFillColr(color);
 				/* Add the padddle to the screen */						
 				add(rect);
 			}
