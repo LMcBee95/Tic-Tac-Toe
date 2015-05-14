@@ -80,13 +80,18 @@ public class Breakout extends GraphicsProgram {
 		
 		for(int i = 0; i < NBRICK_ROWS; i++)
 		{
+			/* Determines the y position for each brick */
 			yPos = i * BRICK_HEIGHT;
+			
 			for(int j = 0; j < NBRICKS_PER_ROW; j++)
 			{
+				/* Determines the x position of each brick */
 				xPos = (j * BRICK_WIDTH) + initXPos;
+				
+				/* Creates a new brick */
 				GRect rect = new GRect(BRICK_WIDTH, BRICK_HEIGHT, xPos ,yPos);
 				
-				
+				/*Determine the color of the brick */
 				int temp = i / 2;
 				if(temp == 0)
 				{
