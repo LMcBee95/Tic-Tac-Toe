@@ -119,7 +119,7 @@ public class Breakout extends GraphicsProgram {
 				{
 					color = Color.CYAN;
 				}
-				ret.setFillColor(color);
+				rect.setFillColor(color);
 				/* Add the padddle to the screen */						
 				add(rect);
 			}
