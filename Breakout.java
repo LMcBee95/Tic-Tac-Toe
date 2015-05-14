@@ -132,7 +132,7 @@ public class Breakout extends GraphicsProgram {
 
 	private void createPaddle()
 	{
-		paddle = new GRect(WIDTH - PADDLE_WIDTH / 2, PADDLE_Y_OFFSET, PADDLE_WIDTH, HEIGHT - PADDLE_HEIGHT);
+		paddle = new GRect(WIDTH - PADDLE_WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
 		add(paddle);
 	}
 }
