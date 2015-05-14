@@ -65,6 +65,7 @@ public class Breakout extends GraphicsProgram {
 	public void init() {
 		/* You fill this in, along with any subsidiary methods */
 		createBricks();
+		createPaddle();
 		
 	}
 
@@ -75,7 +76,7 @@ public class Breakout extends GraphicsProgram {
 	
 	}
 	
-	public void createBricks()
+	private void createBricks()
 	{
 		/* Initialize variable */
 		/* Determine the amount of padding needed for initial block of bricks */
@@ -127,5 +128,10 @@ public class Breakout extends GraphicsProgram {
 				add(rect);
 			}
 		}	
+	}
+
+	private GRect createPaddle()
+	{
+		
 	}
 }
