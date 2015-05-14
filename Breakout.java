@@ -85,6 +85,30 @@ public class Breakout extends GraphicsProgram {
 			{
 				xPos = (j * BRICK_WIDTH) + initXPos;
 				GRect rect = new GRect(BRICK_WIDTH, BRICK_HEIGHT, xPos ,yPos);
+				
+				
+				int temp = i / 2;
+				if(temp == 0)
+				{
+					rect.setColor(Color.RED);
+				}
+				else if(temp == 1)
+				{
+					rect.setColor(Color.ORANGE);
+				}
+				else if(temp == 2)
+				{
+					rect.setColor(Color.YELLOW);
+				}
+				else if(temp == 3)
+				{
+					rect.setColor(Color.GREEN);
+				}
+				else if(temp == 4)
+				{
+					rect.setColor(Color.CYAN);
+				}
+										
 				add(rect);
 			}
 		}	
