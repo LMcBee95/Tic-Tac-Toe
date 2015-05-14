@@ -91,7 +91,7 @@ public class Breakout extends GraphicsProgram {
 				xPos = (j * BRICK_WIDTH) + initXPos;
 				
 				/* Creates a new brick */
-				GRect rect = new GRect(BRICK_WIDTH, BRICK_HEIGHT, xPos ,yPos);
+				GRect rect = new GRect(xPos ,yPos, BRICK_WIDTH, BRICK_HEIGHT);
 				//rect.setFilled(true);
 				
 				/*Determine the color of the brick */
