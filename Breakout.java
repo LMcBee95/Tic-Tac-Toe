@@ -62,6 +62,7 @@ public class Breakout extends GraphicsProgram {
 	public void init() {
 		/* You fill this in, along with any subsidiary methods */
 		createBricks();
+		
 	}
 
 	/* Method: run() */
@@ -74,10 +75,17 @@ public class Breakout extends GraphicsProgram {
 	public void createBricks()
 	{
 		int initXPos = (WIDTH - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
-		Color.RED
-		Color.ORANGE 
-		Color.YELLOW
-		Color.GREEN
-		Color.CYAN
+		int yPos;
+		int xPos;
+		
+		for(int i = 0; i < NBRICK_ROWS; i++)
+		{
+			yPos = i * BRICK_HEIGHT;
+			for(int j = 0; j < NBRICKS_PER_ROW; j++)
+			{
+				xPos = (j * BRICK_WIDTH);
+				GRect rect = new GRect(BRICK_WIDTH, BRICK_HEIGHT, )
+			}
+		}	
 	}
 }
