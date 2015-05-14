@@ -79,7 +79,7 @@ public class Breakout extends GraphicsProgram {
 		int initXPos = (getWidth() - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
 		int yPos;
 		int xPos;
-		Color color = color.RED;
+		Color color = Color.RED;
 		
 		for(int i = 0; i < NBRICK_ROWS; i++)
 		{
