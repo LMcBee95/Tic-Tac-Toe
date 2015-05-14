@@ -57,6 +57,9 @@ public class Breakout extends GraphicsProgram {
 	/** Number of turns */
 	private static final int NTURNS = 3;
 
+	private GRect paddle;
+	
+	
 	/* Method: init() */
 	/** Sets up the Breakout program. */
 	public void init() {
