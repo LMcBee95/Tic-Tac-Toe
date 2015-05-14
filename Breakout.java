@@ -142,5 +142,6 @@ public class Breakout extends GraphicsProgram {
 	private void createBall()
 	{
 		ball = new GOval((WIDTH - BALL_RADIUS) / 2, HEIGHT - 4 * PADDLE_Y_OFFSET, BALL_RADIUS, BALL_RADIUS);
+		addd(ball);
 	}
 }
