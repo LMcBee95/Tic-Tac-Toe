@@ -74,7 +74,9 @@ public class Breakout extends GraphicsProgram {
 	
 	public void createBricks()
 	{
-		int initXPos = (WIDTH - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
+		/* Initialize variable */
+		/* Determine the amount of padding needed for initial block of bricks */
+		int initXPos = (getWidth() - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
 		int yPos;
 		int xPos;
 		
