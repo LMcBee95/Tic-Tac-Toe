@@ -84,7 +84,7 @@ public class Breakout extends GraphicsProgram {
 			for(int j = 0; j < NBRICKS_PER_ROW; j++)
 			{
 				xPos = (j * BRICK_WIDTH) + initXPos;
-				GRect rect = new GRect(BRICK_WIDTH, BRICK_HEIGHT, xPos ,yPos)
+				GRect rect = new GRect(BRICK_WIDTH, BRICK_HEIGHT, xPos ,yPos);
 			}
 		}	
 	}
