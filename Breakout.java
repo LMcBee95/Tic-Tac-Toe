@@ -80,7 +80,7 @@ public class Breakout extends GraphicsProgram {
 	{
 		/* Initialize variable */
 		/* Determine the amount of padding needed for initial block of bricks */
-		int initXPos = (getWidth() - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
+		int initXPos = (WIDTH - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
 		int yPos;
 		int xPos;
 		Color color = Color.RED;
@@ -132,7 +132,7 @@ public class Breakout extends GraphicsProgram {
 
 	private void createPaddle()
 	{
-		paddle = new GRect((getWidth() - PADDLE_WIDTH) / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle = new GRect((WIDTH - PADDLE_WIDTH) / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
 		add(paddle);
 	}
 }
