@@ -102,19 +102,19 @@ public class Breakout extends GraphicsProgram {
 				}
 				else if(temp == 1)
 				{
-					rect.setColor(Color.ORANGE);
+					rect.setFillColor(Color.ORANGE);
 				}
 				else if(temp == 2)
 				{
-					rect.setColor(Color.YELLOW);
+					rect.setFillColor(Color.YELLOW);
 				}
 				else if(temp == 3)
 				{
-					rect.setColor(Color.GREEN);
+					rect.setFillColor(Color.GREEN);
 				}
 				else if(temp == 4)
 				{
-					rect.setColor(Color.CYAN);
+					rect.setFillColor(Color.CYAN);
 				}
 										
 				add(rect);
