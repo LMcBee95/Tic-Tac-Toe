@@ -61,11 +61,23 @@ public class Breakout extends GraphicsProgram {
 	/** Sets up the Breakout program. */
 	public void init() {
 		/* You fill this in, along with any subsidiary methods */
+		createBricks();
 	}
 
 	/* Method: run() */
 	/** Runs the Breakout program. */
 	public void run() {
 		/* You fill this in, along with any subsidiary methods */
+	
+	}
+	
+	public void createBricks()
+	{
+		int initXPos = (WIDTH - NBRICKS_PER_ROW * BRICK_WIDTH) / 2;
+		Color.RED
+		Color.ORANGE 
+		Color.YELLOW
+		Color.GREEN
+		Color.CYAN
 	}
 }
