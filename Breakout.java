@@ -132,6 +132,8 @@ public class Breakout extends GraphicsProgram {
 
 	private GRect createPaddle()
 	{
+		GRect d;
 		
+		return(d);
 	}
 }
