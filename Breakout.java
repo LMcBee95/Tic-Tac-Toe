@@ -270,6 +270,7 @@ public class Breakout extends GraphicsProgram {
 	
 	public void mouseMoved(MouseEvent e)
 	{
-		ball.setFillColor(Color.RED);
+		int xPos = paddle.getX();
+		int yPos = paddle.getY();
 	}
 }
