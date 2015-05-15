@@ -121,7 +121,7 @@ public class Breakout extends GraphicsProgram {
 			{
 				vy = -vy;
 			}
-			if(bottomSide >= HEIGHT || 1)
+			if(bottomSide >= HEIGHT || true)
 			{
 				vy = -vy;
 				
