@@ -60,6 +60,8 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private GOval ball;
 	
+	private GObject hitBrick;
+	
 	/* X and Y velocity of the ball */
 	private double vx, vy;
 	
@@ -206,7 +208,7 @@ public class Breakout extends GraphicsProgram {
 		add(ball);
 	}
 
-	private void checkCollision()
+	private GObject checkCollision()
 	{
 		double xPos = ball.getX();
 		double yPos = ball.getY();
