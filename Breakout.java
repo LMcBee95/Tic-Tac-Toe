@@ -95,7 +95,7 @@ public class Breakout extends GraphicsProgram {
 		double leftSide = xPos;
 		double rightSide = xPos + 2 * BALL_RADIUS;
 		double topSide = yPos;
-		double bottomSide yPos + 2 * BALL_RADIUS;
+		double bottomSide  = yPos + 2 * BALL_RADIUS;
 		
 		
 		
