@@ -238,7 +238,6 @@ public class Breakout extends GraphicsProgram {
 		else
 		{
 			colliding = null;
-			ball.setFillColor(Color.RED);
 		}
 		
 		
