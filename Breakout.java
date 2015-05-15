@@ -83,7 +83,7 @@ public class Breakout extends GraphicsProgram {
 		
 	
 		vx = rgen.nextDouble(1.0, 3.0);
-		vy = 3.0
+		vy = 3.0;
 	}
 	
 	private void createBricks()
