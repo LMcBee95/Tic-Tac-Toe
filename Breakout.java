@@ -104,7 +104,6 @@ public class Breakout extends GraphicsProgram {
 		while(numBricks > 0 && lives > 0)
 		{
 			
-			updateVelocity();
 			/* Determine the position of each side of the ball */
 			xPos = ball.getX();
 			yPos = ball.getY();
@@ -204,34 +203,5 @@ public class Breakout extends GraphicsProgram {
 		ball = new GOval((WIDTH - BALL_RADIUS) / 2, HEIGHT - 7 * PADDLE_Y_OFFSET, BALL_RADIUS, BALL_RADIUS);
 		ball.setFilled(true);
 		add(ball);
-	}
-
-	private void updateVelocity()
-	{
-		/* Determine the position of each side of the ball */
-		xPos = ball.getX();
-		yPos = ball.getY();
-		
-		leftSide = xPos;
-		rightSide = xPos + 2 * BALL_RADIUS;
-		topSide = yPos;
-		bottomSide  = yPos + 2 * BALL_RADIUS;
-		
-		/*See if the ball hits the left or right wall */
-		if(leftSide <= 0 || rightSide >= WIDTH)
-		{
-			vx = -vx;
-		}
-		
-		if(topSide <= 0)
-		{
-			vy = -vy;
-		}
-		if(bottomSide >= HEIGHT)
-		{
-			vy = -vy;
-			
-		}
-
 	}
 }
