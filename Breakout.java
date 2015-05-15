@@ -267,4 +267,10 @@ public class Breakout extends GraphicsProgram {
 		pause(350);
 		
 	}
+	
+	private void mouseMoved(MouseEvent e)
+	{
+		
+	}
+	}
 }
