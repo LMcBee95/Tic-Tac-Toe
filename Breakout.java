@@ -270,6 +270,6 @@ public class Breakout extends GraphicsProgram {
 	
 	public void mouseMoved(MouseEvent e)
 	{
-		
+		ball.setFillColor(Color.RED);
 	}
 }
