@@ -100,9 +100,26 @@ public class Breakout extends GraphicsProgram {
 		int numBricks = NBRICK_ROWS * NBRICKS_PER_ROW;
 		int lives = NTURNS;
 				
+		/* Keep playing the game until either all the bricks are gone or you run out of lives */
 		while(numBricks > 0 && lives > 0)
 		{
+			ball.setSpeed(vx, vy);
 			
+			leftSide = xPos;
+			rightSide = xPos + 2 * BALL_RADIUS;
+			topSide = yPos;
+			bottomSide  = yPos + 2 * BALL_RADIUS;
+			
+			/*See if the ball hits the left or right wall */
+			if(leftSide == 0 || rightSide == WIDTH)
+			{
+				vx = -vx;
+			}
+			
+			if(top == 0)
+			{
+				vy = -vy;
+			}
 			
 		}
 		
