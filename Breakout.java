@@ -139,7 +139,7 @@ public class Breakout extends GraphicsProgram {
 			}
 			else if(colliding != null)
 			{
-				colliding.remove();
+				remove(colliding);
 			}
 			
 			
