@@ -87,6 +87,7 @@ public class Breakout extends GraphicsProgram {
 		{
 			vx = -vx;
 		}
+		vx = 0;
 		vy = 3.0;
 		
 		double xPos = ball.getX();
