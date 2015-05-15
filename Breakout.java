@@ -127,10 +127,15 @@ public class Breakout extends GraphicsProgram {
 			}
 			if(bottomSide >= HEIGHT) //ball hits the bottom of the frame
 			{
-				vy = -vy;
 				lives--;
 				
 				resetBall();
+				vx = rgen.nextDouble(1.0, 3.0);
+				if(rgen.nextBoolean(0.5))
+				{
+					vx = -vx;
+				}
+				vy = 3.0;
 			}
 			
 			colliding = getCollidingObject();
@@ -256,5 +261,7 @@ public class Breakout extends GraphicsProgram {
 	resetBall()
 	{
 		ball.set(WIDTH - BALL_RADIUS) / 2, HEIGHT - 7 * PADDLE_Y_OFFSET);
+		pause(100);
+		
 	}
 }
