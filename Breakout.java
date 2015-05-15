@@ -216,7 +216,7 @@ public class Breakout extends GraphicsProgram {
 		double xPos = ball.getX();
 		double yPos = ball.getY();
 		
-		GObject colliding;
+		GObject colliding = null;
 		
 		if(getElementAt(xPos, yPos) != null)
 		{
@@ -238,6 +238,6 @@ public class Breakout extends GraphicsProgram {
 		{
 			colliding = null;
 		}
-		}
+		return(colliding)
 	}
 }
