@@ -135,11 +135,11 @@ public class Breakout extends GraphicsProgram {
 			
 			colliding = getCollidingObject();
 			
-			if(collider == paddle)
+			if(colliding == paddle)
 			{
 				vy = -vy;
 			}
-			else if(collider != null)
+			else if(colliding != null)
 			{
 				
 			}
