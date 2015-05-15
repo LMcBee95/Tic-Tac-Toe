@@ -73,7 +73,7 @@ public class Breakout extends GraphicsProgram {
 		createBricks();
 		createPaddle();
 		createBall();
-		pause(1000;)
+		pause(1000);
 		
 	}
 
