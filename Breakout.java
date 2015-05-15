@@ -234,5 +234,10 @@ public class Breakout extends GraphicsProgram {
 		{
 			colliding = getElementAt(xPos + 2 * BALL_RADIUS, yPos + 2 * BALL_RADIUS);
 		}
+		else
+		{
+			colliding = null;
+		}
+		}
 	}
 }
