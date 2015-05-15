@@ -60,8 +60,6 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private GOval ball;
 	
-	private GObject colliding;
-	
 	/* X and Y velocity of the ball */
 	private double vx, vy;
 	
@@ -101,6 +99,8 @@ public class Breakout extends GraphicsProgram {
 		
 		int numBricks = NBRICK_ROWS * NBRICKS_PER_ROW;
 		int lives = NTURNS;
+		
+		GObject colliding;
 				
 		/* Keep playing the game until either all the bricks are gone or you run out of lives */
 		while(numBricks > 0 && lives > 0)
@@ -132,7 +132,7 @@ public class Breakout extends GraphicsProgram {
 				
 			}
 			
-			getCollidingObject();
+			colliding = getCollidingObject();
 			
 			
 			/* Update the position of the ball */
@@ -211,14 +211,14 @@ public class Breakout extends GraphicsProgram {
 		add(ball);
 	}
 
-	private void getCollidingObject()
+	private GObject getCollidingObject()
 	{
 		double xPos = ball.getX();
 		double yPos = ball.getY();
 		
 		if(getElementAt(xPos, yPos) != null)
 		{
-			c
+			
 		}
 		else if(getElementAt(xPos, yPos + 2 * BALL_RADIUS) != null)
 		{
