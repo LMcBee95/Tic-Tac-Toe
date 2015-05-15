@@ -110,23 +110,22 @@ public class Breakout extends GraphicsProgram {
 			xPos = ball.getX();
 			yPos = ball.getY();
 			
-			
 			leftSide = xPos;
 			rightSide = xPos + 2 * BALL_RADIUS;
 			topSide = yPos;
 			bottomSide  = yPos + 2 * BALL_RADIUS;
 			
 			/*See if the ball hits the left or right wall */
-			if(leftSide <= 0 || rightSide >= WIDTH)
+			if(leftSide <= 0 || rightSide >= WIDTH) 
 			{
 				vx = -vx;
 			}
 			
-			if(topSide <= 0)
+			if(topSide <= 0) //ball hits the top of the frame
 			{
 				vy = -vy;
 			}
-			if(bottomSide >= HEIGHT)
+			if(bottomSide >= HEIGHT) //ball hits the bottom of the frame
 			{
 				vy = -vy;
 				
@@ -140,7 +139,7 @@ public class Breakout extends GraphicsProgram {
 			}
 			else if(colliding != null)
 			{
-				
+				colliding.remove();
 			}
 			
 			
