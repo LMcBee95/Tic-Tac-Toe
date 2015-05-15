@@ -120,6 +120,10 @@ public class Breakout extends GraphicsProgram {
 			{
 				vy = -vy;
 			}
+			if(bottomSide == 0)
+			{
+				vy = -vy;
+			}
 			
 			/* Update the position of teh ball */
 			ball.move(vx, vy);
