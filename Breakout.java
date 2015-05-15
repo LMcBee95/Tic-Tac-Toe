@@ -60,6 +60,9 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private GOval ball;
 	
+	/* X and Y velocity of the ball */
+	private double vx, vy;
+	
 	
 	/* Method: init() */
 	/** Sets up the Breakout program. */
@@ -75,6 +78,7 @@ public class Breakout extends GraphicsProgram {
 	/** Runs the Breakout program. */
 	public void run() {
 		/* You fill this in, along with any subsidiary methods */
+		
 	
 	}
 	
