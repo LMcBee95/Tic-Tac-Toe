@@ -226,7 +226,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private void createBall()
 	{
-		ball = new GOval((WIDTH - BALL_RADIUS) / 2, HEIGHT - 7 * PADDLE_Y_OFFSET, BALL_RADIUS, BALL_RADIUS);
+		ball = new GOval((WIDTH - BALL_RADIUS) / 2, HEIGHT - 9 * PADDLE_Y_OFFSET, BALL_RADIUS, BALL_RADIUS);
 		ball.setFilled(true);
 		add(ball);
 	}
