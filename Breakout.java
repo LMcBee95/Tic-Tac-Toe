@@ -216,21 +216,23 @@ public class Breakout extends GraphicsProgram {
 		double xPos = ball.getX();
 		double yPos = ball.getY();
 		
+		GObject colliding;
+		
 		if(getElementAt(xPos, yPos) != null)
 		{
-			
+			colliding = getElementAt(xPos, yPos);
 		}
 		else if(getElementAt(xPos, yPos + 2 * BALL_RADIUS) != null)
 		{
-			
+			colliding = getElementAt(xPos, yPos + 2 * BALL_RADIUS)
 		}
 		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos) != null)
 		{
-			
+			colliding = getElementAt(xPos + 2 * BALL_RADIUS, yPos)
 		}
 		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos + 2 * BALL_RADIUS) != null)
 		{
-			
+			colliding = getElementAt(xPos + 2 * BALL_RADIUS, yPos + 2 * BALL_RADIUS);
 		}
 	}
 }
