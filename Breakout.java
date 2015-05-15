@@ -88,6 +88,16 @@ public class Breakout extends GraphicsProgram {
 			vx = -vx;
 		}
 		vy = 3.0;
+		
+		int xPos = ball.getXPos();
+		
+		int leftSide;
+		int rightSide;
+		int topSide;
+		int bottomSide;
+		
+		
+		
 	}
 	
 	private void createBricks()
