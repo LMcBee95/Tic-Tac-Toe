@@ -105,30 +105,6 @@ public class Breakout extends GraphicsProgram {
 		{
 			
 			updateVelocity();
-			/* Determine the position of each side of the ball */
-			xPos = ball.getX();
-			yPos = ball.getY();
-			
-			leftSide = xPos;
-			rightSide = xPos + 2 * BALL_RADIUS;
-			topSide = yPos;
-			bottomSide  = yPos + 2 * BALL_RADIUS;
-			
-			/*See if the ball hits the left or right wall */
-			if(leftSide <= 0 || rightSide >= WIDTH)
-			{
-				vx = -vx;
-			}
-			
-			if(topSide <= 0)
-			{
-				vy = -vy;
-			}
-			if(bottomSide >= HEIGHT)
-			{
-				vy = -vy;
-				
-			}
 			
 			/* Update the position of the ball */
 			ball.move(vx, vy);
