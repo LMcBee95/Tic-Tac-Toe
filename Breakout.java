@@ -278,7 +278,7 @@ public class Breakout extends GraphicsProgram {
 		{
 			xPos = PADDLE_WIDTH / 2;
 		}
-		else if(mouseX > (WIDTH - PADDLE_WIDTH))
+		else if(mouseX > (WIDTH - PADDLE_WIDTH / 2))
 		{
 			xPos = WIDTH - PADDLE_WIDTH / 2;
 		}
