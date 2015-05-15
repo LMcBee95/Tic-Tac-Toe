@@ -120,7 +120,7 @@ public class Breakout extends GraphicsProgram {
 			{
 				vy = -vy;
 			}
-			if(bottomSide == 0)
+			if(bottomSide == HEIGHT)
 			{
 				vy = -vy;
 			}
