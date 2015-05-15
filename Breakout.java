@@ -81,7 +81,7 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		/* You fill this in, along with any subsidiary methods */
 		
-		paddle.addmouseListener();
+		paddle.addMouseListener();
 		
 	
 		vx = rgen.nextDouble(1.0, 3.0);
