@@ -132,7 +132,7 @@ public class Breakout extends GraphicsProgram {
 				
 			}
 			
-			colliding = getCollidingObject();
+			getCollidingObject();
 			
 			
 			/* Update the position of the ball */
@@ -211,14 +211,14 @@ public class Breakout extends GraphicsProgram {
 		add(ball);
 	}
 
-	private GObject getCollidingObject()
+	private void getCollidingObject()
 	{
 		double xPos = ball.getX();
 		double yPos = ball.getY();
 		
 		if(getElementAt(xPos, yPos) != null)
 		{
-			
+			c
 		}
 		else if(getElementAt(xPos, yPos + 2 * BALL_RADIUS) != null)
 		{
