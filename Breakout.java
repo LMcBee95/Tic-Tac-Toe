@@ -286,7 +286,6 @@ public class Breakout extends GraphicsProgram {
 		{
 			xPos = mouseX;
 		}
-		}
 		
 		
 		paddle.setLocation(xPos - PADDLE_WIDTH / 2, HEIGHT - 2 * PADDLE_Y_OFFSET);
