@@ -103,8 +103,8 @@ public class Breakout extends GraphicsProgram {
 		/* Keep playing the game until either all the bricks are gone or you run out of lives */
 		while(numBricks > 0 && lives > 0)
 		{
-			ball.setSpeed(vx, vy);
 			
+			/* Determine the position of each side of the ball */
 			leftSide = xPos;
 			rightSide = xPos + 2 * BALL_RADIUS;
 			topSide = yPos;
@@ -116,10 +116,12 @@ public class Breakout extends GraphicsProgram {
 				vx = -vx;
 			}
 			
-			if(top == 0)
+			if(topSide == 0)
 			{
 				vy = -vy;
 			}
+			
+			ball.setVelocity(vx, vy);
 			
 		}
 		
