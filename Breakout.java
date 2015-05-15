@@ -128,6 +128,7 @@ public class Breakout extends GraphicsProgram {
 			if(bottomSide >= HEIGHT) //ball hits the bottom of the frame
 			{
 				vy = -vy;
+				lives--;
 				
 			}
 			
