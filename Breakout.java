@@ -151,6 +151,7 @@ public class Breakout extends GraphicsProgram {
 			else if(colliding != null)
 			{
 				remove(colliding);
+				numBricks--;
 			}
 			
 			
