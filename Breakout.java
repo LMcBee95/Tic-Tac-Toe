@@ -105,6 +105,8 @@ public class Breakout extends GraphicsProgram {
 		/* Keep playing the game until either all the bricks are gone or you run out of lives */
 		while(numBricks > 0 && lives > 0)
 		{
+			/* Update the position of the ball */
+			ball.move(vx, vy);
 			
 			/* Determine the position of each side of the ball */
 			xPos = ball.getX();
