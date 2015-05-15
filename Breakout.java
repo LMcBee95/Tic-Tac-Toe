@@ -130,6 +130,7 @@ public class Breakout extends GraphicsProgram {
 				vy = -vy;
 				lives--;
 				
+				resetBall();
 			}
 			
 			colliding = getCollidingObject();
