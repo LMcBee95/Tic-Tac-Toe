@@ -211,19 +211,19 @@ public class Breakout extends GraphicsProgram {
 		double xPos = ball.getX();
 		double yPos = ball.getY();
 		
-		if(getElementAt(xPos, yPos))
+		if(getElementAt(xPos, yPos) != null)
 		{
 			
 		}
-		else if(getElementAt(xPos, yPos + 2 * BALL_RADIUS))
+		else if(getElementAt(xPos, yPos + 2 * BALL_RADIUS) != null)
 		{
 			
 		}
-		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos))
+		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos) != null)
 		{
 			
 		}
-		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos + 2 * BALL_RADIUS))
+		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos + 2 * BALL_RADIUS) != null)
 		{
 			
 		}
