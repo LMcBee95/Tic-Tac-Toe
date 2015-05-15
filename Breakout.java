@@ -63,6 +63,8 @@ public class Breakout extends GraphicsProgram {
 	/* X and Y velocity of the ball */
 	private double vx, vy;
 	
+	/* Create a random number generator */
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 	/* Method: init() */
 	/** Sets up the Breakout program. */
@@ -80,6 +82,8 @@ public class Breakout extends GraphicsProgram {
 		/* You fill this in, along with any subsidiary methods */
 		
 	
+		vx = rgen.nextDouble(1.0, 3.0);
+		vy = 3.0
 	}
 	
 	private void createBricks()
