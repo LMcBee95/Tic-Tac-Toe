@@ -238,6 +238,6 @@ public class Breakout extends GraphicsProgram {
 		{
 			colliding = null;
 		}
-		return(colliding)
+		return(colliding);
 	}
 }
