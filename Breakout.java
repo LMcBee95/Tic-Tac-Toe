@@ -267,7 +267,7 @@ public class Breakout extends GraphicsProgram {
 	private void resetBall()
 	{
 		ball.setLocation((WIDTH - BALL_RADIUS) / 2, HEIGHT - 9 * PADDLE_Y_OFFSET);
-		pause(500);
+		pause(1000);
 		
 	}
 	
