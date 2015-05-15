@@ -134,6 +134,15 @@ public class Breakout extends GraphicsProgram {
 			
 			colliding = getCollidingObject();
 			
+			if(collider == paddle)
+			{
+				vy = -vy;
+			}
+			else if(collider != null)
+			{
+				
+			}
+			
 			
 			/* Update the position of the ball */
 			ball.move(vx, vy);
