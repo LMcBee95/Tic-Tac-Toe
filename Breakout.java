@@ -221,17 +221,14 @@ public class Breakout extends GraphicsProgram {
 		if(getElementAt(xPos, yPos) != null)
 		{
 			colliding = getElementAt(xPos, yPos);
-			ball.setFillColor(Color.RED);
 		}
 		else if(getElementAt(xPos, yPos + 2 * BALL_RADIUS) != null)
 		{
 			colliding = getElementAt(xPos, yPos + 2 * BALL_RADIUS);
-			ball.setFillColor(Color.RED);
 		}
 		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos) != null)
 		{
 			colliding = getElementAt(xPos + 2 * BALL_RADIUS, yPos);
-			ball.setFillColor(Color.RED);
 		}
 		else if(getElementAt(xPos + 2 * BALL_RADIUS, yPos + 2 * BALL_RADIUS) != null)
 		{
