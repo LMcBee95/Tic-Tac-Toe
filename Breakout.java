@@ -106,6 +106,9 @@ public class Breakout extends GraphicsProgram {
 		{
 			
 			/* Determine the position of each side of the ball */
+			xPos = ball.getX();
+			yPos = ball.getY();
+			
 			leftSide = xPos;
 			rightSide = xPos + 2 * BALL_RADIUS;
 			topSide = yPos;
@@ -121,7 +124,7 @@ public class Breakout extends GraphicsProgram {
 			{
 				vy = -vy;
 			}
-			if(bottomSide >= HEIGHT || true)
+			if(bottomSide >= HEIGHT)
 			{
 				vy = -vy;
 				
