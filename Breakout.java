@@ -90,11 +90,12 @@ public class Breakout extends GraphicsProgram {
 		vy = 3.0;
 		
 		double xPos = ball.getX();
+		double yPos = ball.getY();
 		
-		int leftSide;
-		int rightSide;
-		int topSide;
-		int bottomSide;
+		double leftSide = xPos;
+		double rightSide = xPos + 2 * BALL_RADIUS;
+		double topSide = yPos;
+		double bottomSide yPos + 2 * BALL_RADIUS;
 		
 		
 		
