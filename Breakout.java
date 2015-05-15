@@ -108,6 +108,7 @@ public class Breakout extends GraphicsProgram {
 			xPos = ball.getX();
 			yPos = ball.getY();
 			
+			
 			leftSide = xPos;
 			rightSide = xPos + 2 * BALL_RADIUS;
 			topSide = yPos;
@@ -203,5 +204,11 @@ public class Breakout extends GraphicsProgram {
 		ball = new GOval((WIDTH - BALL_RADIUS) / 2, HEIGHT - 7 * PADDLE_Y_OFFSET, BALL_RADIUS, BALL_RADIUS);
 		ball.setFilled(true);
 		add(ball);
+	}
+
+	private void checkCollision()
+	{
+		double xPos = ball.getX();
+		double yPos = ball.getY();
 	}
 }
