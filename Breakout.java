@@ -81,6 +81,8 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		/* You fill this in, along with any subsidiary methods */
 		
+		paddle.addmousListener(GEvent e);
+		
 	
 		vx = rgen.nextDouble(1.0, 3.0);
 		if(rgen.nextBoolean(0.5))
@@ -153,7 +155,7 @@ public class Breakout extends GraphicsProgram {
 			
 			
 			/* Update the position of the ball */
-			pause(8);
+			pause(8); 	
 		}
 		
 		
