@@ -89,7 +89,7 @@ public class Breakout extends GraphicsProgram {
 		}
 		vy = 3.0;
 		
-		int xPos = ball.getXPos();
+		int xPos = ball.getPos();
 		
 		int leftSide;
 		int rightSide;
