@@ -98,6 +98,13 @@ public class Breakout extends GraphicsProgram {
 		double bottomSide  = yPos + 2 * BALL_RADIUS;
 		
 		int numBricks = NBRICK_ROWS * NBRICKS_PER_ROW;
+		int lives = NTURNS;
+				
+		while(numBricks > 0 && lives > 0)
+		{
+			
+			
+		}
 		
 		
 	}
