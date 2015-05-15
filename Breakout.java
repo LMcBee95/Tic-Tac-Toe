@@ -121,9 +121,10 @@ public class Breakout extends GraphicsProgram {
 			{
 				vy = -vy;
 			}
-			if(bottomSide >= HEIGHT)
+			if(bottomSide >= HEIGHT || 1)
 			{
 				vy = -vy;
+				
 			}
 			
 			/* Update the position of teh ball */
