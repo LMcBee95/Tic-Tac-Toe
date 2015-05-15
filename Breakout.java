@@ -60,6 +60,8 @@ public class Breakout extends GraphicsProgram {
 	private GRect paddle;
 	private GOval ball;
 	
+	private GObject colliding;
+	
 	/* X and Y velocity of the ball */
 	private double vx, vy;
 	
@@ -129,6 +131,9 @@ public class Breakout extends GraphicsProgram {
 				vy = -vy;
 				
 			}
+			
+			colliding = getCollidingObject();
+			
 			
 			/* Update the position of the ball */
 			ball.move(vx, vy);
